@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body,h1,h2{
+            padding:0;
+            margin:0;
+        }
+        .scrollWrapper{
+            position: absolute;
+            top:30px;
+            left:20vw;
+            width:55vw;
+            background-color: cyan;
+        }
+        .father{
+            width: 100%;
+            height: 60vh;
+            overflow: auto;
+            background-color: cyan;
+        }
+        .child{
+            width:100%;
+            height:1000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollWrapper">
+        <div class="father">
+            <div class="child">
+                子元素
+            </div>
+        </div>
+    </div>
+</body>
+</html>
