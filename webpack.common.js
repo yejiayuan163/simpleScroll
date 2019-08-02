@@ -1,32 +1,49 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var CleanWebpackPlugin=require('clean-webpack-plugin');
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-    entry: './src/js/index.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, './dist')
+  entry:{app: './src/index.js'},
+  output: {
+    filename: 'js/[name].[hash].js',//将输出文件放在js文件夹下
+    path: path.join(__dirname, './dist')
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      'src': path.resolve('src'),
+      'static': path.resolve('static')
     },
-    module: {
-        rules: [
-            {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader'
-                })
+    extensions: ['*', '.js', '.vue', '.json']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|png|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,    // 小于8k的图片自动转成base64格式，并且不会存在实体图片
+              outputPath: 'images/'   // 图片打包后存放的目录
             }
+          }
         ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'src/index.html',
-            filename: 'index.html'
-        }),
-        new CopyWebpackPlugin([{from: __dirname + '/src/images', to: __dirname + '/dist/images'}]),
-        new ExtractTextPlugin("style.css"),
-        new CleanWebpackPlugin(['dist'])
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }
     ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: 'index.html'
+    }),
+    new VueLoaderPlugin(),
+    new CleanWebpackPlugin(['dist'])
+  ]
 }
