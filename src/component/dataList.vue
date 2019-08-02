@@ -23,7 +23,7 @@
         <div>dataList</div>
         <div>dataList</div>
         <div>dataList</div>
-        <div @click="unbind">button</div>
+        <div @click="unbind" style="background-color: aliceblue;border-radius: 4px">点一下，解绑滚动监听(模拟接口没数据返回的情况)</div>
     </y-scroll>
 </template>
 
