@@ -52,7 +52,7 @@ H5应用中，为了减轻后台查询数据的压力，列表常以滚动加载
 
 ![滚动组件效果.gif](https://upload-images.jianshu.io/upload_images/17015329-b8e53d4fd8e429b3.gif?imageMogr2/auto-orient/strip)
 
-demo地址：https://github.com/18819467361/simpleScroll
+demo地址：https://github.com/yejiayuan163/simpleScroll
 
 ##### 总结
 

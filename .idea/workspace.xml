@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c788fd2-52de-40eb-a071-693ba5ad5997" name="默认的" comment="simpleScroll初始化">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/YScroll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/YScroll.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,8 +94,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="125">
-                <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <first_editor relative-caret-position="1050">
+                <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
               </first_editor>
               <second_editor />
             </state>
@@ -285,12 +283,27 @@
       <workItem from="1530459627566" duration="285000" />
       <workItem from="1530460066477" duration="2040000" />
       <workItem from="1564640835098" duration="15088000" />
-      <workItem from="1564815649533" duration="2921000" />
+      <workItem from="1564815649533" duration="4046000" />
     </task>
+    <task id="LOCAL-00001" summary="simpleScroll初始化">
+      <created>1564818757912</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564818757912</updated>
+    </task>
+    <task id="LOCAL-00002" summary="simpleScroll初始化">
+      <created>1564818782071</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564818782071</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32985000" />
+    <option name="totallyTimeSpent" value="34110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,6 +344,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simpleScroll初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="simpleScroll初始化" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/webpack.prod.js" />
@@ -463,8 +480,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="125">
-            <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <first_editor relative-caret-position="1050">
+            <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
           </first_editor>
           <second_editor />
         </state>
