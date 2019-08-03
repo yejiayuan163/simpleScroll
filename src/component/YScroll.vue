@@ -73,6 +73,7 @@
       //解除滚动绑定
       unbindScroll(){
         this.$refs[this.wrapperName].removeEventListener('scroll', this.listenPosition, true);//第三个参数布尔值与绑定时要一致，第二个参数不能用匿名函数
+        console.log('解绑滚动事件')
       }
     },
     beforeDestroy(){
